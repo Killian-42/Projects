@@ -35,6 +35,9 @@ function playRound(pc, human) {
 	}
 	const score = document.getElementById('score');
 	score.textContent = `Computer score ${computerScore} || ${humanScore} Human score`;
+	if (endGame()) {
+		return;
+	}
 }
 
 function endGame() {
